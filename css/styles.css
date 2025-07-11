@@ -320,7 +320,7 @@ section {
   margin: 0;
 }
 
-.step:nth-child(2) {
+.divider {
   border-left: 1px solid var(--accent-divider);
   border-right: 1px solid var(--accent-divider);
 }
