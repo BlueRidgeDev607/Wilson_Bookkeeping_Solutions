@@ -1,0 +1,199 @@
+/* === Contact Page Styling === */
+
+/* === Fonts === */
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #1b1b1b;
+  background-color: #f7f7f7;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  color: #111827;
+}
+
+p, li, button, a, input, textarea {
+  font-family: 'Inter', sans-serif;
+}
+
+.section_title,
+.card-title,
+nav a {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+/* === Logo Styling === */
+.logo-text small {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #6b4e3d; /* accent tone */
+  margin-top: 2px;
+}
+/* === Contact Section === */
+
+.contact-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.contact-intro h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.contact-intro p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* === Jorform Styling === */
+.form-container {
+  max-width: 850px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #eef2f7;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.form-wrapper {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 0;
+  max-width: 900px; /* Increased from 720px */
+  margin: 0 auto; /* Center the form */
+}
+
+/* Responsive iFrame container */
+.form-wrapper iframe {
+  display: block;
+  width: 100%;
+  min-height: 500px; /* Reduced from 650px */
+  border: none;
+  background: transparent;
+}
+
+/* Footer adjustments */
+.simple-footer {
+  padding: 20px 40px;
+  background: #1f2937;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.simple-footer a {
+  color: #f6a04d;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.simple-footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 15px 20px; /* Further reduced for mobile */
+  }
+  
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-section p {
+    font-size: 0.95rem;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .form-wrapper iframe {
+    min-height: 450px; /* Reduced from 750px */
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-right {
+    justify-content: center;
+  }
+}
+
+/* Additional improvements for better UX */
+@media (min-width: 1200px) {
+  .form-wrapper {
+    max-width: 1000px; /* Even wider on large screens */
+  }
+}
+
+/* Loading state for iframe */
+.form-wrapper iframe {
+  transition: opacity 0.3s ease;
+}
+
+.form-wrapper iframe:not([src]) {
+  opacity: 0.5;
+}
+
+/* Ensure proper container sizing */
+.container[style*="min-width:100%"] {
+  min-width: auto !important;
+  max-width: 100% !important;
+  padding: 0 15px;
+}

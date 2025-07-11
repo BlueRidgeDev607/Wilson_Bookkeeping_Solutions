@@ -1,0 +1,162 @@
+.services-section {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 225px;
+  background-color: #0a2a4d;
+}
+
+.header h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 0;
+  min-height: 300px; 
+}
+
+.service-card img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block; 
+}
+
+.service-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+  text-align: left;
+}
+
+.service-card:nth-child(even) .service-text {
+  background-color: #f1f4f8;
+}
+
+.service-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-text h3 {
+  color: #0a2a4d; /* navy blue */
+  margin-bottom: 1rem;
+}
+
+.service-text ul {
+  margin-top: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-text ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+.service-text strong {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #0a2b4c;
+}
+
+.service-text .task-heading {
+  font-size: 1rem;
+  color: #0a2a4d;
+}
+
+.pricing {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #c75100; /* orange */
+}
+
+.faq-section {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  font-size: 1.40rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #1f2937;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-left: 1rem;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a2b4c; 
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  width: 35%;
+}
+
+.cta-button:hover {
+  background-color: #e85c00; /* orange */
+  color: #fff;
+}
